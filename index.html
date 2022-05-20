@@ -37,16 +37,16 @@
             <h2 class="section-title" id="about">about</h2>
             <p>I am currently completing a Masters degree in Computer Science. I am working on a project to study the
                 paradigms and challenges in concurrency and concurrent models. I am interested in building
-                resilient cloud infrastructure and the services that rely on them. I am constantly curious about process
-                and the best approaches to tackle problems - this is true whether I'm working on software, cooking,
-                baking, or word puzzles. I will pursue opportunities so that I can follow my curiosity further,
+                resilient cloud infrastructure and the services. I am constantly curious about process
+                and the best approaches to tackle problems - whether I'm working on software, cooking,
+                baking, or word puzzles. I will pursue opportunities to follow my curiosity,
                 collaborate with others, and strive to create better systems and tools that are accessible to everyone.
             </p>
         </div>
         <div class="section exp">
             <h2 class="section-title" id="experience">experience</h2>
             <div class="exp1">
-                <h3>act-on software - operations intern - Jan-Jun 2021</h3>
+                <h3>act-on software - operations intern - jan-jun 2021</h3>
                 <div>
                     <p> Six-month internship at an email marketing automation company. I worked on a cross-functional
                         Operations
@@ -66,7 +66,7 @@
                 </div>
             </div>
             <div class="exp2">
-                <h3>apex clearing - development intern - Jul-Dec 2020</h3>
+                <h3>apex clearing - development intern - jul-dec 2020</h3>
                 <p>Six-month internship with a digital custody and clearing house. The team was responsible for
                     orchestrating internal
                     processing of daily trade and shepherding trade executions from customer to bookkeeper.</p>
@@ -115,17 +115,30 @@
         </div>
         <div class="section contact">
             <h2 class="section-title" id="contact">contact</h2>
-            <form action="#">
-                <div><label for="name">name</label>
-                    <input type="text" id="name">
+            <form class="contact-form" action="#">
+                <div>
+                    <div>
+                        <label for="name">name*</label>
+                    </div>
+                    <div>
+                        <input type="text" id="name" required="true">
+                    </div>
+                    <div>
+                        <label for="email">email*</label>
+                    </div>
+                    <div>
+                        <input type="email" id="email" required="true">
+                    </div>
                 </div>
-                <div><label for="email">email</label>
-                    <input type="email" id="email">
+                <div>
+                    <div>
+                        <label for="message">message</label>
+                    </div>
+                    <div>
+                        <textarea name="contact-message" id="message" cols="30" rows="10"></textarea>
+                    </div>
+                    <input type="submit" value="Send Message">
                 </div>
-                <div><label for="message">message</label>
-                    <textarea name="contact-message" id="message" cols="30" rows="10"></textarea>
-                </div>
-                <input type="submit" value="Send Message">
             </form>
         </div>
     </main>
