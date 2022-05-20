@@ -47,6 +47,38 @@ body {
     text-decoration: underline;
 }
 
-.bio {
-    padding: 3rem;
+.section {
+    margin: 1em;
+    padding: 1em;
+}
+
+.section-title {
+    margin-bottom: 1em;
+    font-size: 20px;
+}
+
+.contact {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 50%;
+    height: 300px;
+    justify-content: space-evenly;
+    margin-left: 50%;
+}
+
+/* .contact-form>div {
+    height: 300px;
+} */
+
+#name,
+#email {
+    border: none;
+    border-bottom: 1px solid var(--rich-black);
 }
