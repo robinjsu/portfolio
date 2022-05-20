@@ -16,25 +16,25 @@
 </head>
 
 <body>
-    <main>
-        <header class="header">
-            <div>
-                <img class="logo" src="" alt="logo" width="20" height="20">
-            </div>
-            <div class="navigation">
-                <nav>
-                    <menu class="navbar">
-                        <li class="navitem"><a class="navlink" href="#about">about</a></li>
-                        <li class="navitem"><a class="navlink" href="#experience">experience</a></li>
-                        <li class="navitem"><a class="navlink" href="#projects">projects</a></li>
-                        <li class="navitem"><a class="navlink" href="#contact">contact</a></li>
-                    </menu>
-                </nav>
-            </div>
-        </header>
 
-        <section class="main-section bio">
-            <h2 id="about">about</h2>
+    <header class="header">
+        <div>
+            <img class="logo" src="" alt="Robin Su's site logo" width="20" height="20">
+        </div>
+        <div class="navigation">
+            <nav>
+                <menu class="navbar">
+                    <li class="navitem"><a class="navlink" href="#about">about</a></li>
+                    <li class="navitem"><a class="navlink" href="#experience">experience</a></li>
+                    <li class="navitem"><a class="navlink" href="#projects">projects</a></li>
+                    <li class="navitem"><a class="navlink" href="#contact">contact</a></li>
+                </menu>
+            </nav>
+        </div>
+    </header>
+    <main class="main-content">
+        <div class="section bio">
+            <h2 class="section-title" id="about">about</h2>
             <p>I am currently completing a Masters degree in Computer Science. I am working on a project to study the
                 paradigms and challenges in concurrency and concurrent models. I am interested in building
                 resilient cloud infrastructure and the services that rely on them. I am constantly curious about process
@@ -42,48 +42,97 @@
                 baking, or word puzzles. I will pursue opportunities so that I can follow my curiosity further,
                 collaborate with others, and strive to create better systems and tools that are accessible to everyone.
             </p>
-        </section>
-        <section class="main-section exp">
-            <h2 id="experience">experience</h2>
+        </div>
+        <div class="section exp">
+            <h2 class="section-title" id="experience">experience</h2>
             <div class="exp1">
-                <h3>act-on software</h3>
+                <h3>act-on software - operations intern - Jan-Jun 2021</h3>
+                <div>
+                    <p> Six-month internship at an email marketing automation company. I worked on a cross-functional
+                        Operations
+                        team, managing CI/CD and networking for internal teams.</p>
+                    <ul class="exp1-list">
+                        <li class="exp1-listitem">Refactored 15 Jenkins Pipelines by introducing Jenkins Shared
+                            Libraries to eliminate errors,
+                            increased reusability and portability, increase team productivity by 10%</li>
+                        <li class="exp1-listitem">Led informational session on Jenkins Shared Libraries for Operations
+                            team</li>
+                        <li class="exp1-listitem">Revived Python/Flask microservice for SSL certificate automation
+                            renewal service</li>
+                        <li class="exp1-listitem">Integrated new Splunk to Slack functionality in the above
+                            microservice, which supplied
+                            Act-On's support team additional 30 days for renewal resolutions</li>
+                    </ul>
+                </div>
             </div>
             <div class="exp2">
-                <h3>apex clearing</h3>
+                <h3>apex clearing - development intern - Jul-Dec 2020</h3>
+                <p>Six-month internship with a digital custody and clearing house. The team was responsible for
+                    orchestrating internal
+                    processing of daily trade and shepherding trade executions from customer to bookkeeper.</p>
+                <ul>
+                    <li>Expanded functionality for ingest of trade execution data from 4 to 6 data formats</li>
+                    <li>Introduced first metrics dashboards on team for monitoring and tracking trade parsing at the
+                        behest of team engineering lead</li>
+                    <li>Designed and implemented visual event tracking with Prometheus; incorporated 100+ daily
+                        log messages from Kafka event streams with PromQL</li>
+
+                </ul>
             </div>
-        </section>
-        <section class="main-section proj">
-            <h2 id="projects">projects</h2>
+        </div>
+        <div class="section proj">
+            <h2 class="section-title" id="projects">projects</h2>
             <div class="proj1">
                 <h3>GoTextAide/PyTextAide</h3>
+                <p>A desktop application meant to facilitate word definition lookups while reading text. An exploration
+                    of concurrency paradigms, as well as what support is provided by Go versus Python. Graphics
+                    rendering using Go and Python bindings for GLFW and OpenGL.</p>
+                <img src="" alt="Go Text Aide project demo screenshot" width="200" height="200">
             </div>
             <div class="proj2">
                 <h3>SubSynth</h3>
+                <p>A digital music synthesizer. Created with two classmates in
+                    CS510 Computers, Sound and Music. The project was focused on the foundations of
+                    subtractive synthesis, one method for creating and manipulating digital (or analog) sound waves. It
+                    is built with the JUCE framework, a C++ library that was created to make music apps of all kinds,
+                    but contains robust functionality for building apps with graphical user interfaces. Project
+                    features include: three different oscillators, which alter the quality of the sound (i.e. sine wave,
+                    triangle wave, and sawtooth wave patterns); an ADSR envelope for volume control (to control the
+                    attack, delay, sustain and release of the tones); options to use an on-screen keyboard or external
+                    MIDI keyboard to play the synth, and a visualizer that reacts to the user's actions on the keyboard.
+                </p>
+                <img src="" alt="Sub Synth project demo screenshot" width="200" height="200">
             </div>
             <div class="proj3">
-                <h3>Impulse Response</h3>
+                <h3>RIR Processor</h3>
+                <p>A room impulse response processor module in Python. This project centered around an attempt to
+                    replicate methods laid out by Angelo Farina in “Simultaneous Measurement of Impulse Response and
+                    Distortion With a Swept-Sine Technique”<a href="https://www.aes.org/e-lib/browse.cfm?elib=10211"
+                        rel="external">[see paper]</a>. The method of extracting an impulse response with a linear or
+                    exponential sweep was the main innovation presented.</p>
+                <img src="" alt="Impulse Response project demo screenshot" width="200" height="200">
             </div>
-            <div class="proj4">
-                <h3>PlantFinder</h3>
-            </div>
-        </section>
-        <section class="main-section contact">
-            <h2 id="contact">contact</h2>
+        </div>
+        <div class="section contact">
+            <h2 class="section-title" id="contact">contact</h2>
             <form action="#">
                 <div><label for="name">name</label>
-                    <input type="text">
+                    <input type="text" id="name">
                 </div>
                 <div><label for="email">email</label>
-                    <input type="text">
+                    <input type="email" id="email">
                 </div>
                 <div><label for="message">message</label>
                     <textarea name="contact-message" id="message" cols="30" rows="10"></textarea>
                 </div>
-                <input type="submit" value="Send">
+                <input type="submit" value="Send Message">
             </form>
-        </section>
-
+        </div>
     </main>
+    <footer class="footer">
+        <span>Thank you for visiting!</span>
+        <span class="update">last updated May 2022</span>
+    </footer>
 </body>
 
 </html>
