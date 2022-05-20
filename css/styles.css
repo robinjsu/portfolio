@@ -1,0 +1,13 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --noto-font: 'Noto Sans';
+    --source-font: 'Source Sans 3';
+}
+
+body {
+    font-family: var(--source-font), 'PT Sans', Arial, Helvetica, sans-serif;
+    font-weight: 200;
+}
