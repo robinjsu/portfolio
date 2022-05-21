@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" /> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="preconnect" as="font" href="https://fonts.googleapis.com">
     <link rel="preconnect" as="font" href="https://fonts.gstatic.com" crossorigin>
@@ -17,19 +17,16 @@
 
 <body>
 
-    <header class="header">
-        <div>
-            <img class="logo" src="" alt="Robin Su's site logo" width="20" height="20">
-        </div>
-        <div class="navigation">
-            <nav>
-                <menu class="navbar">
-                    <li class="navitem"><a class="navlink" href="#about">about</a></li>
-                    <li class="navitem"><a class="navlink" href="#experience">experience</a></li>
-                    <li class="navitem"><a class="navlink" href="#projects">projects</a></li>
-                    <li class="navitem"><a class="navlink" href="#contact">contact</a></li>
-                </menu>
-            </nav>
+    <header class="header container-fluid">
+        <nav class="navbar fixed-top navbar-expand-sm d-flex">
+            <a href="#" class=" navbar-brand logo">LOGO</a>
+            <ul class="menu navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="#about">about</a></li>
+                <li class="nav-item"><a class="nav-link" href="#experience">experience</a></li>
+                <li class="nav-item"><a class="nav-link" href="#projects">projects</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">contact</a></li>
+            </ul>
+        </nav>
         </div>
     </header>
     <main class="main-content">
@@ -137,7 +134,9 @@
                     <div>
                         <textarea name="contact-message" id="message" cols="30" rows="10"></textarea>
                     </div>
-                    <input type="submit" value="Send Message">
+                    <div class="submit">
+                        <input class="submit-btn" type="submit" value="Send Message">
+                    </div>
                 </div>
             </form>
         </div>

@@ -21,24 +21,20 @@ body {
     color: var(--oxford);
 }
 
-.header {
-    display: flex;
-    justify-content: space-between;
-    padding: 10px 20px;
+.navbar {
+    background-color: whitesmoke;
+    padding: 10px 15px;
     border-bottom: 1px solid var(--rich-black);
+    justify-content: space-between;
 }
 
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    width: 300px;
-}
 
 .navitem {
     list-style: none;
+    margin: 5px;
 }
 
-.navlink {
+.nav-link {
     color: var(--oxford);
     text-decoration: none;
 }
@@ -60,25 +56,31 @@ body {
 .contact {
     display: flex;
     flex-direction: row;
-    justify-content: right;
 }
 
 .contact-form {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
     width: 50%;
     height: 300px;
     justify-content: space-evenly;
-    margin-left: 50%;
 }
-
-/* .contact-form>div {
-    height: 300px;
-} */
 
 #name,
 #email {
     border: none;
     border-bottom: 1px solid var(--rich-black);
+    width: 200px;
+}
+
+.submit-btn {
+    position: relative;
+    top: 1em;
+    left: 67%;
+    background-color: whitesmoke;
+    color: var(--oxford);
+    border-radius: 2px;
+    border: 1px dotted var(--oxford);
+    padding: 5px;
+
 }
