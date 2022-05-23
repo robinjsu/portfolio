@@ -32,7 +32,7 @@
         </div>
     </header>
     <main class="main-content container">
-        <div class="section bio">
+        <section class="section bio">
             <h2 class="section-title" id="about">about</h2>
             <p>I am currently completing a Masters degree in Computer Science. I am working on a project
                 to study the
@@ -42,8 +42,8 @@
                 baking, or word puzzles. I will pursue opportunities to follow my curiosity,
                 collaborate with others, and strive to create better systems and tools that are accessible to everyone.
             </p>
-        </div>
-        <div class="section exp">
+        </section>
+        <section class="section exp">
             <h2 class="section-title" id="experience">experience</h2>
             <div class="exp1">
                 <h3>act-on software - operations intern - jan-jun 2021</h3>
@@ -78,63 +78,67 @@
                         log messages from Kafka event streams with PromQL</li>
                 </ul>
             </div>
-        </div>
-        <div class="section projects">
-            <h2 class="section-title" id="projects">projects</h2>
-            <div class="container overflow-hidden">
-                <div class="row row-cols-1 row-cols-lg-2 row-cols-xl-3">
-                    <div class="col project prj1">
-                        <div class="mx-2 my-2" id="p1">
-                            <h3 class="prj1-title">GoTextAide</h3>
-                            <p class="p-text" id="p1-text">A desktop application meant to facilitate word definition
-                                lookups
-                                while reading text. An exploration of concurrency paradigms, as well as what support is
-                                provided
-                                by Go versus Python. Graphics rendering using Go and Python bindings for GLFW and
-                                OpenGL.
-                            </p>
-                            <img class="prj-img" src="./images/gotextaide.png"
-                                alt="Go Text Aide project demo screenshot" width="90%">
-                        </div>
+        </section>
+        <section class="section projects">
+            <h2 class="section-title">projects</h2>
+            <div class="row row-cols-1 row-cols-lg-2 row-cols-xl-3">
+                <div class="col">
+                    <div class="project prj1 mx-2 my-2" id="p1">
+                        <h3 class="p-title">GoTextAide</h3>
+                        <img class="prj-img" src="./images/gotextaide.png" alt="Go Text Aide project demo screenshot"
+                            width="90%">
+                        <p class="p-text" id="p1-text">A desktop application meant to facilitate word definition
+                            lookups
+                            while reading text. An exploration of concurrency paradigms, as well as what support is
+                            provided
+                            by Go versus Python. Graphics rendering using Go and Python bindings for GLFW and
+                            OpenGL.
+                        </p>
+                        <a class="p-link" id="p1-link" href="" rel="external noreferrer noopener">See project on
+                            Github</a>
                     </div>
-                    <div class="col project prj2">
-                        <div class="mx-2 my-2" id="p2">
-                            <h3 class="prj2-title">SubSynth</h3>
-                            <p class="p-text" id="p2-text"> A digital music synthesizer. Created with classmates in
-                                CS510
-                                Computers, Sound and Music. We used subtractive synthesis, a method for creating and
-                                manipulating sound waves. Project features include:
-                                three oscillators (sine wave, triangle wave, and sawtooth wave patterns); an ADSR
-                                envelope
-                                for
-                                control overthe attack, delay, sustain and release of notes); onscreen keyboard and
-                                external MIDI keyboard options; a visualizer that reacts to the user's input on
-                                the keyboard. Built with JUCE, a robust C++ application framework.
-                            </p>
-                            <img class="prj-img" src="./images/subsynth.png" alt="Sub Synth project demo screenshot"
-                                width="90%">
-                        </div>
+                </div>
+                <div class="col">
+                    <div class="project prj2 mx-2 my-2" id="p2">
+                        <h3 class="p-title">SubSynth</h3>
+                        <img class="prj-img" src="./images/subsynth.png" alt="Sub Synth project demo screenshot"
+                            width="90%">
+                        <p class="p-text" id="p2-text"> A digital music synthesizer. Created with classmates in
+                            CS510
+                            Computers, Sound and Music. We used subtractive synthesis, a method for creating and
+                            manipulating sound waves. Project features include:
+                            three oscillators (sine wave, triangle wave, and sawtooth wave patterns); an ADSR
+                            envelope
+                            for
+                            control overthe attack, delay, sustain and release of notes); onscreen keyboard and
+                            external MIDI keyboard options; a visualizer that reacts to the user's input on
+                            the keyboard. Built with JUCE, a robust C++ application framework.
+                        </p>
+                        <a class="p-link" id="p2-link" href="" rel="external noreferrer noopener">See project on
+                            Github</a>
                     </div>
-                    <div class="col project prj3">
-                        <div class="mx-2 my-2" id="p3">
-                            <h3 class="prj3-title">RIR Processor</h3>
-                            <p class="p-text" id="p3-text">A room impulse response processor module in Python. This
-                                project
-                                centered around an attempt to replicate methods laid out by Angelo Farina in
-                                “Simultaneous
-                                Measurement of Impulse Response and Distortion With a Swept-Sine Technique" <a
-                                    href="https://www.aes.org/e-lib/browse.cfm?elib=10211" rel="external">[see
-                                    paper]</a>.
-                                </br>Built using NumPy/SciPy and standard Python modules.</p>
-                            <img class="prj-img" src="./images/rir.png" alt="Impulse Response project demo screenshot"
-                                width="90%">
-                        </div>
+                </div>
+                <div class="col">
+                    <div class="project prj3 mx-2 my-2" id="p3">
+                        <h3 class="p-title">RIR Processor</h3>
+                        <img class="prj-img" src="./images/rir.png" alt="Impulse Response project demo screenshot"
+                            width="90%">
+                        <p class="p-text" id="p3-text">A room impulse response processor module in Python. This
+                            project
+                            centered around an attempt to replicate methods laid out by Angelo Farina in
+                            “Simultaneous
+                            Measurement of Impulse Response and Distortion With a Swept-Sine Technique" <a
+                                href="https://www.aes.org/e-lib/browse.cfm?elib=10211" rel="external">[see
+                                paper]</a>.
+                            </br>Built using NumPy/SciPy and standard Python modules.</p>
+                        <a class="p-link" id="p3-link" href="" rel="external noreferrer noopener">See project on
+                            Github</a>
                     </div>
                 </div>
             </div>
 
-        </div>
-        <div class="section contact container">
+        </section>
+        <section class="section contact container">
             <h2 class="section-title" id="contact">contact</h2>
             <form class="contact-form" action="#">
                 <div>
@@ -158,7 +162,7 @@
                     </div>
                 </div>
             </form>
-        </div>
+        </section>
     </main>
     <!-- <footer class="footer container-fluid d-flex justify-content-between">
         <span>Thank you for visiting</span>
