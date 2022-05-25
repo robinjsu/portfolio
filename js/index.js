@@ -1,4 +1,7 @@
-const fadeBtns = () => {
+
+emailjs.init('bfIuxoAFjsrz2NswM');
+
+const setFadeBtns = () => {
     var projects = ['p1', 'p2', 'p3'];
     projects.forEach((p) => {
         $(`#${p}`).hover(() => {
@@ -14,19 +17,14 @@ const fadeBtns = () => {
 };
 
 $(document).ready(() => {
-    fadeBtns();
+    setFadeBtns();
     $('.contact-form').submit((event) => {
-        Email.send({
-            SecureToken: `${process.env.SMTP_TOKEN}`,
-            To: 'robinjsu@gmail.com',
-            From: 'robisu@pdx.edu',
-            Subject: 'visitor message',
-            Body: `Message from ${$('#name').val()} - ${$('#email').val()}
-                   ${$('#message').val()}`
-        }).then(
-            message => alert(message)
-        );
+        emailjs.sendForm('service_portfolio_site', 'template_contact', '#contact-form')
+            .then((res) => {
+                console.log(res);
+            }, (err) => {
+                console.log(err);
+            });
         event.preventDefault();
-
     });
 });
