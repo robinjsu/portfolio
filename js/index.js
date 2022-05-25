@@ -17,9 +17,7 @@ $(document).ready(() => {
     fadeBtns();
     $('.contact-form').submit((event) => {
         Email.send({
-            Host: 'smtp.elasticemail.com',
-            Username: 'robisu@pdx.edu',
-            Password: `${process.env.SMTP_PASS}`,
+            SecureToken: `${process.env.SMTP_TOKEN}`,
             To: 'robinjsu@gmail.com',
             From: 'robisu@pdx.edu',
             Subject: 'visitor message',
