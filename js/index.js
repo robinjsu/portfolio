@@ -19,7 +19,7 @@ $(document).ready(() => {
         Email.send({
             Host: 'smtp.elasticemail.com',
             Username: 'robisu@pdx.edu',
-            Password: `${SMTP_PASS}`,
+            Password: `${process.env.SMTP_PASS}`,
             To: 'robinjsu@gmail.com',
             From: 'robisu@pdx.edu',
             Subject: 'visitor message',
