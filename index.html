@@ -18,75 +18,62 @@
     </script>
     <script type="text/javascript" defer src="./js/index.js"></script>
 </head>
-<title>Portfolio</title>
+<title>Robin Su | Portfolio</title>
 </head>
 
 <body>
     <header class="header container-fluid">
         <nav class="navbar navbar-expand-sm d-flex">
-            <a href="#" class=" navbar-brand logo">LOGO</a>
+            <a href="" class="navbar-brand logo fs-2">ROBIN SU</a>
             <ul class="menu navbar-nav">
-                <li class="nav-item"><a class="nav-link" href="#about">about</a></li>
-                <li class="nav-item"><a class="nav-link" href="#experience">experience</a></li>
-                <li class="nav-item"><a class="nav-link" href="#projects">projects</a></li>
-                <li class="nav-item"><a class="nav-link" href="#contact">contact</a></li>
+                <li class="nav-item"><a class="nav-link fs-5" href="#about">about</a></li>
+                <li class="nav-item"><a class="nav-link fs-5" href="#experience">experience</a></li>
+                <li class="nav-item"><a class="nav-link fs-5" href="#projects">projects</a></li>
+                <li class="nav-item"><a class="nav-link fs-5" href="#contact">contact</a></li>
             </ul>
         </nav>
         </div>
     </header>
-    <main class="main-content container">
-        <section class="section bio">
-            <h2 class="section-title" id="about">about</h2>
-            <p>I am currently completing a Masters degree in Computer Science. I am working on a project
-                to study the
-                paradigms and challenges in concurrency and concurrent models. I am interested in building
+    <main class="main-content container overflow-hidden">
+        <section class="section bio m-5 fs-2">
+            <h2 class="section-title" id="about">ABOUT ME</h2>
+            <p class="section-text">I am currently completing a Masters degree in Computer Science. I am interested in
+                building
                 resilient cloud infrastructure and the services. I am constantly curious about process
                 and the best approaches to tackle problems - whether I'm working on software, cooking,
                 baking, or word puzzles. I will pursue opportunities to follow my curiosity,
                 collaborate with others, and strive to create better systems and tools that are accessible to everyone.
             </p>
         </section>
-        <section class="section exp">
-            <h2 class="section-title" id="experience">experience</h2>
-            <div class="exp1">
-                <h3>act-on software - operations intern - jan-jun 2021</h3>
-                <div>
-                    <p> Six-month internship at an email marketing automation company. I worked on a cross-functional
-                        Operations
-                        team, managing CI/CD and networking for internal teams.</p>
-                    <ul class="exp1-list">
-                        <li class="exp1-listitem">Refactored 15 Jenkins Pipelines by introducing Jenkins Shared
-                            Libraries to eliminate errors,
-                            increased reusability and portability, increase team productivity by 10%</li>
-                        <li class="exp1-listitem">Led informational session on Jenkins Shared Libraries for Operations
-                            team</li>
-                        <li class="exp1-listitem">Revived Python/Flask microservice for SSL certificate automation
-                            renewal service</li>
-                        <li class="exp1-listitem">Integrated new Splunk to Slack functionality in the above
-                            microservice, which supplied
-                            Act-On's support team additional 30 days for renewal resolutions</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="exp2">
-                <h3>apex clearing - development intern - jul-dec 2020</h3>
-                <p>Six-month internship with a digital custody and clearing house. The team was responsible for
-                    orchestrating internal
-                    processing of daily trade and shepherding trade executions from customer to bookkeeper.</p>
-                <ul>
-                    <li>Expanded functionality for ingest of trade execution data from 4 to 6 data formats</li>
-                    <li>Introduced first metrics dashboards on team for monitoring and tracking trade parsing at the
-                        behest of team engineering lead</li>
-                    <li>Designed and implemented visual event tracking with Prometheus; incorporated 100+ daily
-                        log messages from Kafka event streams with PromQL</li>
+        <section class="section experience">
+            <h2 class="section-title">EXPERIENCE</h2>
+            <div id="experience1">
+                <h3>Operations Intern</h3>
+                <h4>Act-On Software</h4>
+                <h4>January - June 2021</h4>
+                <p class="section-text">An email marketing automation company. Worked on the
+                    Operations team, managing CI/CD and networking for internal teams.</p>
+                <ul class="exp-list" id="experience1-list">
                 </ul>
             </div>
+            <hr>
+            <div id="experience2">
+                <h3>Development Intern</h3>
+                <h4>Apex Clearing</h4>
+                <h4>July - December 2020</h4>
+                <p class="section-text">A digital custody and clearing house. On the Trade Processing team, responsible
+                    for orchestrating internal processing of trade and shepherding trade executions from customer to
+                    bookkeeper.</p>
+                <ul class="exp-list" id="experience2-list">
+                </ul>
+            </div>
+            <hr>
         </section>
         <section class="section projects">
-            <h2 class="section-title">projects</h2>
+            <h2 class="section-title">PROJECTS</h2>
             <div class="row row-cols-1 row-cols-lg-2 row-cols-xl-3">
                 <div class="col">
-                    <div class="project prj1 mx-2 my-2" id="p1">
+                    <div class="project prj1 mt-3" id="p1">
                         <h3 class="p-title">GoTextAide</h3>
                         <img class="p-img" src="./images/gotextaide.png" alt="Go Text Aide project demo screenshot"
                             width="90%">
@@ -105,7 +92,7 @@
                     </div>
                 </div>
                 <div class="col">
-                    <div class="project prj2 mx-2 my-2" id="p2">
+                    <div class="project prj2 mt-3" id="p2">
                         <h3 class="p-title">SubSynth</h3>
                         <img class="p-img" src="./images/subsynth.png" alt="Sub Synth project demo screenshot"
                             width="90%">
@@ -128,7 +115,7 @@
                     </div>
                 </div>
                 <div class="col">
-                    <div class="project prj3 mx-2 my-2" id="p3">
+                    <div class="project prj3 mt-3" id="p3">
                         <h3 class="p-title">RIR Processor</h3>
                         <img class="p-img" src="./images/rir.png" alt="Impulse Response project demo screenshot"
                             width="90%">
@@ -150,29 +137,24 @@
             </div>
 
         </section>
-        <section class="section contact container">
-            <h2 class="section-title">contact</h2>
-            <form class="contact-form" id="contact-form">
-                <div>
-                    <div class="contact-info">
-                        <label class="form-label" for="name">name*</label>
-                        <input class="form-control input" type="text" id="name" name="visitor-name" required="true">
-                        <label class="form-label" for="email">email*</label>
-                        <input class="form-control input" type="email" id="email" name="visitor-email" required="true">
-                    </div>
+        <section class="section contact">
+            <h2 class="section-title">CONTACT</h2>
+            <form class="row contact-form" id="contact-form">
+                <div class="col-lg-3 contact-info">
+                    <input class="form-control input mt-2" type="text" id="name" name="visitor-name" required="true">
+                    <label class="form-label" for="name">name*</label>
+                    <input class="form-control input mt-2" type="email" id="email" name="visitor-email" required="true">
+                    <label class="form-label" for="email">email*</label>
                 </div>
-                <div>
-                    <div>
-                        <label class="form-label" for="message">message</label>
-                    </div>
-                    <div>
-                        <textarea class="form-control" name="contact-message" id="message" cols="30"
-                            rows="10"></textarea>
-                    </div>
-                    <div class="submit">
-                        <input class="submit-btn" type="submit" value="Send Message" id="submit">
-                    </div>
+                <div class="col-lg-8 msg-area">
+                    <!-- <label class="form-label" for="message">message</label> -->
+                    <textarea class="form-control input-msg mt-3" name="contact-message" rows="5" cols="20"
+                        placeholder="Send me a message!"></textarea>
+                    <input class="submit-btn mt-3" type="submit" value="Submit" id="submit">
                 </div>
+
+
+
             </form>
         </section>
     </main>

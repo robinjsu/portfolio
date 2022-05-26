@@ -9,17 +9,19 @@
 
 * {
     box-sizing: border-box;
-    /* margin: 0; */
     font-family: var(--source-font), 'PT Sans', Arial, Helvetica, sans-serif;
-    font-size: 14px;
+    font-size: 16px;
+    margin: 0px;
+    padding: 0px;
 }
 
 h2 {
-    font-size: 24px;
+    font-size: 30px;
+    margin-bottom: 1em;
 }
 
 h3 {
-    font-size: 20px;
+    font-size: 24px;
 }
 
 body {
@@ -34,8 +36,13 @@ body {
 .navbar {
     background-color: whitesmoke;
     padding: 10px 20px;
-    border-bottom: 1px solid var(--shadow-blue);
+    border-bottom: 1px solid var(--oxford);
     justify-content: space-between;
+}
+
+.logo {
+    font-weight: 400;
+    color: var(--oxford);
 }
 
 .navitem {
@@ -61,6 +68,27 @@ body {
 .col {
     display: flex;
     flex-direction: row;
+}
+
+.section-text {
+    font-size: 20px;
+}
+
+.bio {
+    border: 1px solid var(--gray-blue);
+    border-radius: 4px;
+}
+
+.expand {
+    color: white;
+    background-color: var(--gray-blue);
+    border: 1px solid var(--gray-blue);
+    border-radius: 2px;
+}
+
+.expand:hover {
+    color: var(--gray-blue);
+    background-color: white;
 }
 
 .project {
@@ -103,19 +131,34 @@ body {
     opacity: 0.0;
 }
 
+.contact-form {
+    display: flex;
+    justify-content: space-around;
+}
+
 .input {
     border: none;
     border-radius: 0px;
     border-bottom: 1px solid var(--rich-black);
-    width: 200px;
+}
+
+.msg-area {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-msg {
+    border-radius: 2px;
+    border: 1px solid var(--shadow-blue);
 }
 
 .submit-btn {
     background-color: whitesmoke;
     color: var(--oxford);
     border-radius: 2px;
-    border: 1px dotted var(--oxford);
+    border: 1px solid var(--shadow-blue);
     padding: 5px;
+    width: 25%;
 }
 
 .footer {
