@@ -35,6 +35,9 @@
         </div>
     </header>
     <main class="main-content container overflow-hidden">
+        <section class="section intro">
+            <h1>WELCOME TO MY PORTFOLIO SITE.</h1>
+        </section>
         <section class="section bio m-5 fs-2">
             <h2 class="section-title" id="about">ABOUT ME</h2>
             <p class="section-text">I am currently completing a Masters degree in Computer Science. I am interested in
@@ -46,7 +49,7 @@
             </p>
         </section>
         <section class="section experience">
-            <h2 class="section-title">EXPERIENCE</h2>
+            <h2 class="section-title" id="experience">EXPERIENCE</h2>
             <div id="experience1">
                 <h3>Operations Intern</h3>
                 <h4>Act-On Software</h4>
@@ -70,7 +73,7 @@
             <hr>
         </section>
         <section class="section projects">
-            <h2 class="section-title">PROJECTS</h2>
+            <h2 class="section-title" id="projects">PROJECTS</h2>
             <div class="row row-cols-1 row-cols-lg-2 row-cols-xl-3">
                 <div class="col">
                     <div class="project prj1 mt-3" id="p1">
@@ -138,7 +141,7 @@
 
         </section>
         <section class="section contact">
-            <h2 class="section-title">CONTACT</h2>
+            <h2 class="section-title" id="contact">CONTACT</h2>
             <form class="row contact-form" id="contact-form">
                 <div class="col-lg-3 contact-info">
                     <input class="form-control input mt-2" type="text" id="name" name="visitor-name" required="true">
@@ -147,8 +150,8 @@
                     <label class="form-label" for="email">email*</label>
                 </div>
                 <div class="col-lg-8 msg-area">
-                    <!-- <label class="form-label" for="message">message</label> -->
-                    <textarea class="form-control input-msg mt-3" name="contact-message" rows="5" cols="20"
+                    <label class="form-label" for="message">message</label>
+                    <textarea class="form-control input-msg" name="contact-message" id="message" rows="5" cols="20"
                         placeholder="Send me a message!"></textarea>
                     <input class="submit-btn mt-3" type="submit" value="Submit" id="submit">
                 </div>
