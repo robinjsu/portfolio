@@ -15,15 +15,6 @@
     padding: 0px;
 }
 
-h2 {
-    font-size: 30px;
-    margin-bottom: 1em;
-}
-
-h3 {
-    font-size: 24px;
-}
-
 body {
     font-weight: 200;
     color: var(--oxford);
@@ -60,8 +51,9 @@ body {
     text-decoration: underline var(--oxford);
 }
 
+
 .section {
-    margin: 1em;
+    margin: 1em 0em 1em 0em;
     padding: 1em;
 }
 
@@ -74,21 +66,41 @@ body {
     font-size: 20px;
 }
 
+.intro {
+    height: 200px;
+    justify-content: center;
+    text-align: center;
+    background-color: var(--shadow-blue);
+}
+
 .bio {
+    /* text-align: right; */
     border: 1px solid var(--gray-blue);
     border-radius: 4px;
 }
 
+
 .expand {
-    color: white;
-    background-color: var(--gray-blue);
-    border: 1px solid var(--gray-blue);
+    color: var(--gray-blue);
+    background-color: white;
+    /* border: 1px solid var(--gray-blue); */
     border-radius: 2px;
+    height: 35px;
+    width: 100px;
+    align-self: flex-end;
 }
 
 .expand:hover {
-    color: var(--gray-blue);
-    background-color: white;
+    color: white;
+    background-color: var(--gray-blue);
+}
+
+.experience li {
+    list-style-type: circle;
+}
+
+.exp-list {
+    margin-bottom: 0px;
 }
 
 .project {
@@ -96,7 +108,7 @@ body {
     flex-direction: column;
     justify-content: space-between;
     align-content: stretch;
-    border: 1px solid rgb(219, 217, 217);
+    /* border: 1px solid rgb(219, 217, 217); */
     text-align: center;
     padding-bottom: 1em;
 }
@@ -128,6 +140,10 @@ body {
     height: 50px;
     border: none;
     border-radius: 2px;
+    opacity: 0.0;
+}
+
+.extra {
     opacity: 0.0;
 }
 

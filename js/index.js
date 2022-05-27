@@ -15,10 +15,18 @@ const setFadeBtns = () => {
     projects.forEach((p) => {
         $(`#${p}`).hover(() => {
             $(`#${p}-btn`).animate({
-                opacity: 1.0
+                opacity: 1.0,
+                duration: 'slow'
+            });
+            $(`#${p}-extra`).animate({
+                opacity: 1.0,
+                duration: 'slow'
             });
         }, () => {
             $(`#${p}-btn`).animate({
+                opacity: 0.0
+            });
+            $(`#${p}-extra`).animate({
                 opacity: 0.0
             });
         });
@@ -27,7 +35,7 @@ const setFadeBtns = () => {
 
 const createButton = (exp, items) => {
     var btn = document.createElement('button');
-    btn.textContent = 'See More';
+    btn.textContent = 'more ▼';
     btn.className = 'btn expand';
     btn.setAttribute('id', `${exp}-btn`);
     btn.onclick = () => {
@@ -49,7 +57,7 @@ const createMinButton = (expId, items) => {
         .append($('<button>')
             .attr('class', 'btn expand')
             .attr('id', `${expId}-less`)
-            .text('Collapse')
+            .text('less ▲')
             .click(() => {
                 $(`.list-${expId}`).remove();
                 $(`#${expId}-less`).remove();
