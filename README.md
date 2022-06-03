@@ -20,32 +20,34 @@ For the contact form, I used the [EmailJS](https://www.emailjs.com/docs/sdk/send
 
 The deployed site can be accessed at [robinjsu.github.io/portfolio](https://robinjsu.github.io/portfolio).
 
-This site can also be deployed locally using node/npm. See instructions below.
+This site can also be deployed locally using node/npm. See instructions below. I used the [Express](https://expressjs.com/) JavaScript framework to set up the server.
 
 ### Instructions for Local Deployment
 
-Requirements: To deploy locally, you must have [NodeJS](https://nodejs.org/en/) (v16.15.1 LTS) installed. It includes [npm](https://docs.npmjs.com/about-npm) (v8.6.0), which will be used to install all dependencies and to spin up the server.
+Requirements: To deploy locally, you must have [NodeJS](https://nodejs.org/en/) (v16.15.1 LTS) installed. It includes [npm](https://docs.npmjs.com/about-npm) (v8.6.0), which will be used to install all dependencies and to spin up the server. All dependencies are listed in `package.json`.
 
-#### To Run:
+### To Run:
 
- - Clone this repo
- - From the root directory, where  `package.json` lives, run the following command in a terminal to install all dependencies: 
+ 1. Clone this repo
+ 2. From the root directory, where  `package.json` lives, run the following command in a terminal to install all dependencies: 
  ```
     npm install
  ``` 
- - To start a local server listening on `port 5000`, run:
+ 3. From the same root directory, run site on the local server listening on `port 5000` with:
  ```
     npm start
  ```
- - In a browser tab, view the site at 
+ 4. In a browser tab, view the site at 
  ```
     http://localhost:5000
  ```
+ 5. `ctrl-c` to stop server
 
 ### Resources:
 
- - Custom fonts - https://www.digitalocean.com/community/tutorials/how-to-load-and-use-custom-fonts-with-css
- - https://www.emailjs.com/docs/sdk/send-form/ 
+ - Using custom fonts - https://www.digitalocean.com/community/tutorials/how-to-load-and-use-custom-fonts-with-css
  - EmailJS: https://www.emailjs.com/docs/sdk/send-form/ 
- - Font Awesome for icons - https://fontawesome.com/
+ - Font Awesome - https://fontawesome.com/
+ - NodeJS (latest versions) - https://nodejs.org/en/
+ - Express - https://expressjs.com/
 
