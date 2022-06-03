@@ -1,4 +1,5 @@
 
+// public key for email-sending function
 emailjs.init('bfIuxoAFjsrz2NswM');
 const experience1 = ["Refactored 15 Jenkins Pipelines by introducing Jenkins Shared Libraries to eliminate errors, increased reusability and portability, increase team productivity by 10%",
     "Led informational session on Jenkins Shared Libraries for Operations team",
@@ -73,6 +74,8 @@ const expand = (expId, items) => {
 
 $(document).ready(function () {
     setFadeBtns();
+    expand('experience1', experience1);
+    expand('experience2', experience2);
     $('#contact-form').submit((event) => {
         emailjs.sendForm('service_portfolio_site', 'template_contact', '#contact-form')
             .then(() => {
@@ -84,6 +87,4 @@ $(document).ready(function () {
         event.preventDefault();
         document.getElementById('contact-form').reset();
     });
-    expand('experience1', experience1);
-    expand('experience2', experience2);
 });

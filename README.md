@@ -5,11 +5,11 @@ Author: Robin Su
 
 Term: Spring 2022
 
-This a my final project created for Introduction to Web Development. It is a single page website that highlights my previous work experience, projects, and a short bio. It also includes a contact form where site visitors can send me a message (via email).
+This a my final project created for Introduction to Web Development. It is a single-page website that highlights my previous work experience, projects, and a short bio. It also includes a contact form where site visitors can send me a message (via email).
 
 I used a combination of HTML, CSS, JavaScript, and [jQuery](https://api.jquery.com/) to create all of the elements for the site. 
 
-I used classes from [Bootstrap 5](https://getbootstrap.com/) to help create a few different elements on the site, including: 
+I used classes from [Bootstrap 5](https://getbootstrap.com/) to help create a few elements, including: 
  - main layout - spacing, flexbox classes, and row/col classes
  - button styling and button hover behavior
  - navbar (specifically, the .navbar-toggler class and JavaScript plugin for collapse functionality)
@@ -46,6 +46,7 @@ Requirements: To deploy locally, you must have [NodeJS](https://nodejs.org/en/) 
 ### Resources:
 
  - Using custom fonts - https://www.digitalocean.com/community/tutorials/how-to-load-and-use-custom-fonts-with-css
+ - Bootstrap 5 - https://getbootstrap.com/
  - EmailJS: https://www.emailjs.com/docs/sdk/send-form/ 
  - Font Awesome - https://fontawesome.com/
  - NodeJS (latest versions) - https://nodejs.org/en/
