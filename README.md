@@ -20,7 +20,7 @@ For the contact form, I used the [EmailJS](https://www.emailjs.com/docs/sdk/send
 
 The deployed site can be accessed at [robinjsu.github.io/portfolio](https://robinjsu.github.io/portfolio).
 
-This site can also be deployed locally from the `deploy` branch of this repository.
+This site can also be deployed locally using node/npm. See instructions below.
 
 ### Instructions for Local Deployment
 
@@ -28,7 +28,7 @@ Requirements: To deploy locally, you must have [NodeJS](https://nodejs.org/en/) 
 
 #### To Run:
 
- - Clone the `deploy` branch of this repo.
+ - Clone this repo
  - From the root directory, where  `package.json` lives, run the following command in a terminal to install all dependencies: 
  ```
     npm install
