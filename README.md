@@ -42,12 +42,6 @@ Requirements: To deploy locally, you must have [NodeJS](https://nodejs.org/en/) 
     http://localhost:5000
  ```
 
-
-
-
-
-
-
 ### Resources:
 
  - Custom fonts - https://www.digitalocean.com/community/tutorials/how-to-load-and-use-custom-fonts-with-css
