@@ -4,7 +4,7 @@
     --rich-black: #0d1b2aff;
     --oxford: #1b263bff;
     --gray-blue: #415a77ff;
-    --shadow-blue: rgb(161, 175, 195);
+    --shadow-blue: rgba(161, 175, 195, 0.607);
     --light-grey: rgb(245, 245, 245);
 }
 
