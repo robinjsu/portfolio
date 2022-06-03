@@ -149,14 +149,8 @@ body {
     padding: 20px;
 }
 
-.p-link {
-    text-decoration: none;
-}
-
 .p-btn {
     align-self: center;
-    width: 100px;
-    height: 50px;
     border: none;
     border-radius: 2px;
     opacity: 0.0;
@@ -207,9 +201,35 @@ body {
     color: var(--light-grey);
 }
 
+.social {
+    border: none;
+    color: var(--gray-blue);
+    padding: 10px;
+    text-decoration: none;
+    font-weight: 400;
+}
+
+.social:hover {
+    background-color: var(--gray-blue);
+    color: var(--light-grey);
+    transition: color 0.4s;
+}
+
+.social-link {
+    border-radius: 2px;
+    color: var(--gray-blue);
+    text-decoration: none;
+}
+
+.social-link:hover {
+    transition: color 0.4s;
+    text-decoration: none;
+    color: var(--light-grey);
+}
+
 .footer {
     background-color: var(--light-grey);
-    padding: 5px;
+    padding: 10px;
     border-top: 1px solid var(--shadow-blue);
     font-weight: 400;
 }

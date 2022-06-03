@@ -49,11 +49,13 @@
         </section>
         <section class="section bio fs-2" id="about" tabindex="0">
             <h2 class="section-title">ABOUT ME</h2>
-            <p class="section-text">I am currently completing a Masters degree in Computer Science. I am interested in
-                building resilient cloud infrastructure and the services. I am constantly curious about process and the
-                best approaches to tackle problems - whether I'm working on software, cooking, baking, or word puzzles.
-                I am pursuing opportunities to follow my curiosity, collaborate with others, and will strive to create
-                better systems and tools that benefit all. </p>
+            <p class="section-text">I am currently completing a Masters degree in Computer Science at Portland State
+                University. My interests in school have covered a range of topics including cloud systems and services,
+                web development, and cybersecurity. I am constantly curious about process and the best approaches to
+                tackle problems - whether I'm working on software, cooking, baking, or word puzzles. I am pursuing
+                professional opportunities that will allow me to continue learning and following my curiosity. I hope to
+                also connect and collaborate with people interested in building accessible and equitable tools for
+                public benefit.</p>
         </section>
         <section class="section" tabindex="0">
             <h2 class="section-title" id="experience">EXPERIENCE</h2>
@@ -91,10 +93,10 @@
                                 paradigms for building graphical user interfaces in Go and Python. Features: text
                                 display, word definition display, audio playback of text (via Google's Text-To-Speech
                                 API). Pixel rendering done with GLFW and OpenGL libraries. </span></p>
-                        <button class="p-btn" id="p1-btn" type="btn">
-                            <i class="fa-brands fa-github fa-xl"></i>
-                            <a class="p-link" href="https://github.com/robinjsu/go_project"
-                                rel="external noreferrer noopener" target="_blank">Github</a>
+                        <button class="p-btn social" id="p1-btn" type="button">
+                            <a class="p-link social-link" href="https://github.com/robinjsu/go_project"
+                                rel="external noreferrer noopener" target="_blank"> <i
+                                    class="fa-brands fa-github fa-xl"></i> Github</a>
                         </button>
                     </div>
                 </div>
@@ -110,10 +112,10 @@
                                 envelope for control overthe attack, delay, sustain and release of notes); onscreen
                                 keyboard and external MIDI keyboard options; a visualizer that reacts to the user's
                                 input on the keyboard. Built with JUCE, a robust C++ application framework. </span> </p>
-                        <button class="p-btn" id="p2-btn" type="btn">
-                            <i class="fa-brands fa-github fa-xl"></i>
-                            <a class="p-link" href="https://github.com/HudsWilSu/Subsynth"
-                                rel="external noreferrer noopener" target="_blank">GitHub </a>
+                        <button class="p-btn social" id="p2-btn" type="button">
+                            <a class="p-link social-link" href="https://github.com/HudsWilSu/Subsynth"
+                                rel="external noreferrer noopener" target="_blank"><i
+                                    class="fa-brands fa-github fa-xl"></i> GitHub</a>
                         </button>
                     </div>
                 </div>
@@ -129,10 +131,10 @@
                                     href="https://www.aes.org/e-lib/browse.cfm?elib=10211" rel="external">[see
                                     paper]</a>. </br>Built using NumPy/SciPy and standard Python modules.</span>
                         </p>
-                        <button class="p-btn" id="p3-btn" type="btn">
-                            <i class="fa-brands fa-github fa-xl"></i>
-                            <a class="p-link" href="https://github.com/robinjsu/RIR_Processor"
-                                rel="external noreferrer noopener" target="_blank">GitHub</a>
+                        <button class="p-btn social" id="p3-btn" type="button">
+                            <a class="social-link" href="https://github.com/robinjsu/RIR_Processor"
+                                rel="external noreferrer noopener" target="_blank"><i
+                                    class="fa-brands fa-github fa-xl"></i> GitHub</a>
                         </button>
                     </div>
                 </div>
@@ -140,7 +142,7 @@
         </section>
         <section class="section contact" tabindex="0">
             <h2 class="section-title" id="contact">CONTACT</h2>
-            <form class="row contact-form" id="contact-form">
+            <form class="row contact-form mb-5" id="contact-form">
                 <div class="col-lg-3 contact-info">
                     <input class="form-control input mt-2" type="text" id="name" name="visitor-name" required="true">
                     <label class="form-label" for="name">name*</label>
@@ -154,11 +156,18 @@
                     <input class="submit-btn mt-3" type="submit" value="Submit" id="submit">
                 </div>
             </form>
+            <hr>
+            <div class="mt-4 text-center">
+                <a class="social" id="gh" href="https://github.com/robinjsu" target="_blank" role="button"><i
+                        class="fa-brands fa-github fa-xl"> </i> Github</a>
+                <a class="social" href="https://www.linkedin.com/in/robin-j-su/" target="_blank" role="button"><i
+                        class="fa-brands fa-linkedin fa-xl"></i> LinkedIn</a>
+            </div>
         </section>
     </main>
-    <footer class="footer container-fluid d-flex flex-row justify-content-end">
+    <footer class="footer container-fluid d-flex flex-row justify-content-between">
         <span>Thank you for visiting!</span>
-        <!-- <span class="update">site created with HTML, CSS, JavaScript, and jQuery</span> -->
+        <span>Updated June 2022</span>
     </footer>
 </body>
 
