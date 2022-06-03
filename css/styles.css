@@ -156,6 +156,32 @@ body {
     opacity: 0.0;
 }
 
+.social {
+    border: none;
+    color: var(--gray-blue);
+    padding: 10px;
+    text-decoration: none;
+    font-weight: 400;
+}
+
+.social:hover {
+    background-color: var(--gray-blue);
+    color: var(--light-grey);
+    transition: color 0.4s;
+}
+
+.social-link {
+    border-radius: 2px;
+    color: var(--gray-blue);
+    text-decoration: none;
+}
+
+.social-link:hover {
+    transition: color 0.4s;
+    text-decoration: none;
+    color: var(--light-grey);
+}
+
 .extra {
     opacity: 0.0;
 }
@@ -198,32 +224,6 @@ body {
 
 .submit-btn:hover {
     background-color: var(--oxford);
-    color: var(--light-grey);
-}
-
-.social {
-    border: none;
-    color: var(--gray-blue);
-    padding: 10px;
-    text-decoration: none;
-    font-weight: 400;
-}
-
-.social:hover {
-    background-color: var(--gray-blue);
-    color: var(--light-grey);
-    transition: color 0.4s;
-}
-
-.social-link {
-    border-radius: 2px;
-    color: var(--gray-blue);
-    text-decoration: none;
-}
-
-.social-link:hover {
-    transition: color 0.4s;
-    text-decoration: none;
     color: var(--light-grey);
 }
 
