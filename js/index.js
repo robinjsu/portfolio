@@ -11,6 +11,10 @@ const experience2 = [
     "Designed and implemented visual event tracking with Prometheus; incorporated 100+ daily log messages from Kafka event streams with PromQL"
 ];
 
+const experience3 = ["Replacing legacy software with new solutions utilizing microservices in the cloud",
+    "Designing Java applications using Bazel build systems"
+];
+
 const setFadeBtns = () => {
     var projects = ['p1', 'p2', 'p3'];
     projects.forEach((p) => {
@@ -76,6 +80,7 @@ $(document).ready(function () {
     setFadeBtns();
     expand('experience1', experience1);
     expand('experience2', experience2);
+    expand('experience3', experience3);
     $('#contact-form').submit((event) => {
         emailjs.sendForm('service_portfolio_site', 'template_contact', '#contact-form')
             .then(() => {
